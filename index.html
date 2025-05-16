@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pemesanan Tiket Konser Juicy Luice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Pemesanan Tiket</h2>
+        <form action="proses_pemesanan.php" method="POST">
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Nomor Telepon:</label>
+            <input type="text" name="telepon" required>
+
+            <label>Tempat Duduk:</label>
+            <select name="tempat_duduk" required>
+                <option value="VIP">VIP</option>
+                <option value="Reguler">Reguler</option>
+                <option value="Festival">Festival</option>
+            </select>
+
+            <label>Jumlah Tiket:</label>
+            <input type="number" name="jumlah_tiket" min="1" required>
+
+            <label>Metode Pembayaran:</label>
+            <select name="metode_pembayaran" required>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="E-Wallet">E-Wallet</option>
+                <option value="Kartu Kredit">Kartu Kredit</option>
+            </select>
+
+            <button type="submit">Pesan Tiket</button>
+        </form>
+    </div>
+</body>
+</html>
